@@ -81,9 +81,7 @@ export default {
           this.loading = false;
           return;
         }
-        let that = this
         if (this.user.email && this.user.password) {
-
           this.$store.dispatch('auth/login', this.user).then(
             () => {
               this.$router.push('/profile');
