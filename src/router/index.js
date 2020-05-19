@@ -7,6 +7,7 @@ import Profile from '../views/Profile.vue';
 import AdminPage from '../views/AdminPage.vue';
 import ModeratorPage from '../views/ModeratorPage.vue';
 import UserPage from '../views/UserPage.vue';
+import Logout from '../views/Logout.vue';
 
 
 Vue.use(VueRouter);
@@ -45,6 +46,11 @@ const routes = [
     path: '/user',
     component: UserPage,
   },
+  {
+    path: '/logout',
+    component: Logout,
+  },
+
 ];
 
 const router = new VueRouter({
