@@ -16,7 +16,7 @@ module.exports = {
     const { app } = homepage.section;
     app.assert.elementCount('@logo', 1);
     app.expect.section('@navbar').to.be.visible;
-    app.expect.section('@login').to.be.visible;;
+    app.expect.section('@login').to.be.visible;
 
     browser.end();
   },

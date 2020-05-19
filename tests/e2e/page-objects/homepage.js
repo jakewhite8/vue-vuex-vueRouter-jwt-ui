@@ -37,7 +37,7 @@ module.exports = {
         navbar: {
           // the equivalent css selector for the "welcome" sub-section would be:
           //  '#app div.hello'
-          selector: 'nav.navbar'
+          selector: 'nav.navbar',
 
         },
       },
