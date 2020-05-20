@@ -14,14 +14,14 @@ class AuthService {
       })
       .then((response) => {
         if (response.data.accessToken) {
-          sessionStorage.setItem('user', JSON.stringify(response.data));
+          localStorage.setItem('user', JSON.stringify(response.data));
         }
         return response.data;
       });
   }
 
   logout() {
-    sessionStorage.removeItem('user');
+    localStorage.removeItem('user');
   }
 
   register(user) {
