@@ -3,7 +3,7 @@ import AuthService from '../services/auth.service';
 
 const activeUser = JSON.parse(localStorage.getItem('user'));
 const initialState = activeUser
-  ? { status: { loggedIn: true }, activeUser }
+  ? { status: { loggedIn: true }, user: activeUser }
   : { status: { loggedIn: false }, user: null };
 
 const auth = {
